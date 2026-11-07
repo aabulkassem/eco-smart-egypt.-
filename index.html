@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EcoSmart Egypt | إيكو سمارت مصر (SDG 7 & 13)</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+body{font-family:'Cairo',sans-serif;background:#f8fafc;color:#1e293b}
+.card{background:white;padding:1.5rem;border-radius:1rem;border:1px solid #e2e8f0;box-shadow:0 1px 3px rgba(0,0,0,0.05)}
+.lbl{display:block;font-size:0.875rem;font-weight:700;color:#334155;margin-bottom:0.375rem}
+.inp{width:100%;background:#f8fafc;border:1px solid #cbd5e1;border-radius:0.5rem;padding:0.625rem;font-weight:700;color:#0f172a;outline:none;transition:all 0.2s}
+.inp:focus{border-color:#16a34a;box-shadow:0 0 0 3px rgba(22,163,74,0.1)}
+.note{font-size:0.75rem;color:#78350f;background:#fffbeb;border:1px solid #fde68a;border-radius:0.75rem;padding:0.75rem;line-height:1.5}
+section{padding:4rem 0}
+h2{font-size:1.875rem;font-weight:900;color:#0f172a;margin-bottom:0.5rem}
+</style>
+</head>
+<body class="bg-slate-50 text-slate-800">
+
+<!-- Header -->
+<header class="bg-white/90 backdrop-blur-md border-b border-slate-200 sticky top-0 z-50 shadow-xs">
+<div class="max-w-7xl mx-auto px-4 h-20 flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-xl bg-green-600 flex items-center justify-center text-white font-black text-xl">🌱</div>
+<div>
+<h1 class="text-xl font-black text-slate-900">EcoSmart Egypt <span class="text-green-600 text-sm font-bold">إيكو سمارت مصر</span></h1>
+<p class="text-xs text-slate-500 font-semibold">طاقة نظيفة وبأسعار معقولة (SDG 7 & 13)</p>
+</div>
+</div>
+<nav class="hidden md:flex gap-6 text-sm font-bold text-slate-600">
+<a href="#calc" class="hover:text-green-600 transition">الحاسبة</a>
+<a href="#shems" class="hover:text-green-600 transition">مستشار الاستهلاك</a>
+<a href="#finance" class="hover:text-green-600 transition">التمويل</a>
+<a href="#about" class="hover:text-green-600 transition">الأبحاث</a>
+</nav>
+<a href="#calc" class="hidden sm:inline-flex items-center gap-2 bg-green-600 text-white font-bold px-4 py-2.5 rounded-xl text-sm shadow-sm hover:bg-green-700 transition">احسب وفرك الآن</a>
+</div>
+</header>
+
+<!-- Hero Section -->
+<section style="background-color: #0f172a; color: white; padding: 4rem 0;">
+<div class="max-w-7xl mx-auto px-4 grid lg:grid-cols-2 gap-12 items-center">
+<div class="space-y-6">
+<span style="background: rgba(34, 197, 94, 0.15); color: #4ade80; border: 1px solid rgba(34, 197, 94, 0.3); padding: 0.3rem 0.8rem; border-radius: 9999px; font-size: 0.75rem; font-weight: 700;">مشروع طلابي لترشيد الطاقة واستدامة المناخ</span>
+<h2 style="font-size: 2.25rem; font-weight: 900; line-height: 1.3; color: white;">قرّر بالأرقام: ترشيد، ألواح شمسية فردية، أم مشروع مشترك؟</h2>
+<p style="color: #cbd5e1; font-size: 1rem; line-height: 1.6;">أداة تعليمية تحسب فاتورتك بشرائح التعريفة وتقارن الجدوى المالية للطاقة الشمسية بمعدلات خصم واقعية، وتختبر فكرة المشروع المشترك بين عدة أسر (Abouaiana &amp; Battisti, 2025).</p>
+<div class="flex flex-wrap gap-4 pt-2">
+<a href="#calc" style="background: #22c55e; color: #020617; font-weight: 800; padding: 0.875rem 1.5rem; border-radius: 0.75rem; text-decoration: none;">جرّب الحاسبة التفاعلية</a>
+<a href="#shems" style="background: #1e293b; color: white; font-weight: 700; padding: 0.875rem 1.5rem; border-radius: 0.75rem; border: 1px solid #475569; text-decoration: none;">مستشار الاستهلاك (SHEMS)</a>
+</div>
+</div>
+
+<div style="display: flex; flex-direction: column; gap: 1rem;">
+<div style="background: #1e293b; padding: 1.25rem; border-radius: 1rem; border: 1px solid #334155; text-align: right;">
+<span style="font-size: 0.85rem; font-weight: 700; color: #94a3b8;">اعتماد على النفط والغاز</span>
+<b style="display: block; font-size: 2rem; font-weight: 900; color: #fbbf24; margin-top: 0.25rem;">≈90%</b>
+<span style="font-size: 0.75rem; color: #cbd5e1; margin-top: 0.25rem; display: block;">Abdelmeguid &amp; Ibrahiem, 2025</span>
+</div>
+
+<div style="background: #1e293b; padding: 1.25rem; border-radius: 1rem; border: 1px solid #334155; text-align: right;">
+<span style="font-size: 0.85rem; font-weight: 700; color: #94a3b8;">انبعاثات الطاقة (2015)</span>
+<b style="display: block; font-size: 2rem; font-weight: 900; color: #fb7185; margin-top: 0.25rem;">64.5%</b>
+<span style="font-size: 0.75rem; color: #cbd5e1; margin-top: 0.25rem; display: block;">Abdelmeguid &amp; Ibrahiem, 2025</span>
+</div>
+
+<div style="background: #1e293b; padding: 1.25rem; border-radius: 1rem; border: 1px solid #334155; text-align: right;">
+<span style="font-size: 0.85rem; font-weight: 700; color: #94a3b8;">هدف الدولة 2035</span>
+<b style="display: block; font-size: 2rem; font-weight: 900; color: #4ade80; margin-top: 0.25rem;">42%</b>
+<span style="font-size: 0.75rem; color: #cbd5e1; margin-top: 0.25rem; display: block;">طاقة متجددة (Gibson et al., 2024)</span>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Calculator Section -->
+<section id="calc">
+<div class="max-w-7xl mx-auto px-4">
+<div class="text-center max-w-2xl mx-auto mb-10">
+<span class="text-green-600 font-bold text-xs uppercase tracking-wider">الأداة التفاعلية الأولى</span>
+<h2>حاسبة الجدوى: منفرد أم تعاونية؟</h2>
+<p class="text-slate-600 text-sm">أدخل استهلاكك أو فاتورتك. الحاسبة تقارن نظامًا لأسرة واحدة بنظام مشترك بين عدة أسر لدعم الهدف 7 والهدف 13.</p>
+</div>
+
+<div class="grid lg:grid-cols-12 gap-8 items-start">
+<div class="lg:col-span-5 card space-y-5">
+<h3 class="font-bold text-lg text-slate-900 border-b pb-3">إدخال البيانات</h3>
+<div class="grid grid-cols-2 gap-4">
+<div><label class="lbl">الاستهلاك (ك.و.س/شهر)</label><input id="kwh" type="number" min="10" value="400" class="inp" oninput="fromKwh()"></div>
+<div><label class="lbl">الفاتورة (ج.م/شهر)</label><input id="bill" type="number" min="5" class="inp" oninput="fromBill()"></div>
+</div>
+<div>
+<label class="lbl">ساعات الذروة الشمسية: <span id="sunV" class="text-green-600 font-black">5.5</span> ساعة/يوم</label>
+<input id="sun" type="range" min="4" max="7" step="0.1" value="5.5" class="w-full accent-green-600 mt-2" oninput="sunV.innerText=this.value;run()">
+</div>
+<div>
+<label class="lbl">عدد الأسر في المشروع المشترك: <span id="nV" class="text-green-600 font-black">3</span> أسر</label>
+<input id="n" type="range" min="2" max="10" value="3" class="w-full accent-green-600 mt-2" oninput="nV.innerText=this.value;run()">
+</div>
+
+<details class="text-sm bg-slate-50 p-3 rounded-xl border border-slate-200"><summary class="font-bold cursor-pointer text-slate-800">افتراضات قابلة للتعديل</summary>
+<div class="grid grid-cols-2 gap-3 mt-3">
+<div><label class="lbl">معدل الخصم %</label><input id="disc" type="number" value="27" class="inp" oninput="run()"></div>
+<div><label class="lbl">زيادة سعر الكهرباء %</label><input id="esc" type="number" value="10" class="inp" oninput="run()"></div>
+<div><label class="lbl">تكلفة الكيلوواط (ج.م)</label><input id="cap" type="number" value="35000" class="inp" oninput="run()"></div>
+<div><label class="lbl">سعر بيع الفائض</label><input id="exp" type="number" step="0.05" value="0.8" class="inp" oninput="run()"></div>
+<div class="col-span-2"><label class="lbl">خصم الشراء الجماعي %</label><input id="grp" type="number" value="0" class="inp" oninput="run()"></div>
+</div>
+</details>
+
+<details class="text-sm bg-slate-50 p-3 rounded-xl border border-slate-200"><summary class="font-bold cursor-pointer text-slate-800">تعريفة الكهرباء المنزلية (ج.م/ك.و.س)</summary>
+<div id="tar" class="grid grid-cols-4 gap-2 mt-3"></div>
+<p class="note mt-3">الأسعار مستمدة من التقارير الصحفية المعلنة لشرائح الكهرباء، مع تطبيق قواعد الشرائح التراكمية والتصاعدية ورسوم الخدمة التقديرية. يُنصح بمراجعة النشرات الرسمية لجهاز تنظيم مرفق الكهرباء (EgyptERA).</p>
+</details>
+
+<p class="note"><b>ملاحظات منهجية وقانونية:</b> هذه الأداة تقديرية للأغراض التعليمية وليست نصيحة مالية استثمارية. نموذج التعاونية المشتركة هو سيناريو سياسة مقترح ولم نتحقق من إطاره القانوني والتنظيمي الحالي في مصر. الحد الأدنى لنظام net-metering هو 5 كيلوواط (Abouaiana &amp; Battisti, 2025)، والتخزين والبطاريات غير محسوبة لعوائق تقنية ومالية (Abubakr et al., 2022). افتراضات كفاءة النظام (80%) والتدهور السنوي (0.5%) وتكلفة الصيانة (1%) هي افتراضات نموذج المحاكاة الخاص بالفريق.</p>
+</div>
+
+<div class="lg:col-span-7 card space-y-6">
+<div class="flex items-center justify-between border-b pb-3">
+<h3 class="font-black text-lg text-slate-900">نتائج التحليل والجدوى المالية (25 سنة)</h3>
+<span class="bg-green-100 text-green-800 text-xs font-bold px-2.5 py-1 rounded-md">محاكاة فورية</span>
+</div>
+
+<div class="grid sm:grid-cols-2 gap-4">
+<div class="p-4 rounded-xl border border-slate-200 bg-slate-50">
+<span class="text-xs font-bold text-slate-500">السيناريو الأول</span>
+<b class="text-base font-black text-slate-800 mb-2 block">أسرة واحدة (فردي)</b>
+<div id="r1" class="grid grid-cols-3 gap-2"></div>
+</div>
+<div class="p-4 rounded-xl border border-green-300 bg-green-50/60">
+<span class="text-xs font-bold text-green-700">السيناريو النظري المقترح</span>
+<b class="text-base font-black text-green-900 mb-2 block">مشروع مشترك (<span id="nT">3</span> أسر)</b>
+<div id="r2" class="grid grid-cols-3 gap-2"></div>
+</div>
+</div>
+
+<p id="msg" class="text-sm font-bold text-slate-700 bg-slate-100 p-3 rounded-xl border"></p>
+<p id="co2" class="text-xs text-slate-600 font-semibold"></p>
+
+<div class="h-72 w-full pt-2"><canvas id="ch"></canvas></div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- SHEMS Section -->
+<section id="shems" class="bg-white border-y border-slate-200">
+<div class="max-w-7xl mx-auto px-4">
+<div class="text-center max-w-2xl mx-auto mb-10">
+<span class="text-green-600 font-bold text-xs uppercase tracking-wider">الإدارة الذكية للأحمال</span>
+<h2>مستشار الاستهلاك (SHEMS)</h2>
+<p class="text-slate-600 text-sm">إدارة الأحمال المنزلية لتقليل الاستهلاك وتجنب الشرائح التصاعدية (Saif et al., 2026).</p>
+</div>
+
+<div class="grid lg:grid-cols-12 gap-8 items-start">
+<div id="apps" class="lg:col-span-7 space-y-3"></div>
+<div class="lg:col-span-5 bg-slate-900 text-white p-6 rounded-2xl space-y-5 shadow-lg">
+<div>
+<span class="text-xs text-slate-400 font-semibold">الاستهلاك الشهري المتوقع</span>
+<b id="sk" class="block text-4xl font-black text-amber-400 mt-1"></b>
+</div>
+<div>
+<span class="text-xs text-slate-400 font-semibold">الشريحة والفاتورة التقديرية</span>
+<b id="sb" class="block text-xl font-extrabold text-emerald-400 mt-1"></b>
+</div>
+<ul id="st" class="text-sm text-slate-200 list-disc list-inside space-y-2 border-t border-slate-800 pt-4"></ul>
+<p class="text-xs text-slate-400 leading-relaxed">التوفير يتحقق من خفض إجمالي الكيلوواط حسب هيكل تعريفة الاستهلاك المنزلي في مصر.</p>
+<button onclick="kwh.value=Math.round(sk.dataset.v);fromKwh();location.hash='calc'" class="w-full bg-green-500 hover:bg-green-600 text-slate-950 font-extrabold py-3 rounded-xl text-sm transition shadow-md">استخدم هذا الاستهلاك في الحاسبة</button>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Finance Section -->
+<section id="finance">
+<div class="max-w-7xl mx-auto px-4">
+<div class="text-center max-w-2xl mx-auto mb-10">
+<span class="text-green-600 font-bold text-xs uppercase tracking-wider">الاستثمار الأخضر</span>
+<h2>التمويل ودعم الاستثمار الأخضر</h2>
+<p class="text-slate-600 text-sm">ارتفاع التكلفة الرأسمالية (CAPEX) ومعدلات الفائدة وتكلفة التمويل يمثل عائقاً رئيساً أمام الأسر والقطاع الخاص (ElSayed et al., 2023; Gibson et al., 2024).</p>
+</div>
+
+<div class="grid md:grid-cols-3 gap-6 mb-8">
+<div class="card bg-slate-50 border-slate-200">
+<div class="text-3xl mb-3">🏦</div>
+<h3 class="font-bold text-base text-slate-900 mb-1">القروض الخضراء البنكية</h3>
+<p class="text-xs text-slate-600 leading-relaxed">تتطلب دراسة معدلات الفائدة الفعلية وفترات السداد للتأكد من تناسب الأقساط مع وفر الفاتورة.</p>
+</div>
+<div class="card bg-slate-50 border-slate-200">
+<div class="text-3xl mb-3">🤝</div>
+<h3 class="font-bold text-base text-slate-900 mb-1">عقود شراء الطاقة (PPA)</h3>
+<p class="text-xs text-slate-600 leading-relaxed">نموذج يقلل التكلفة المبدئية حيث يركب المطور المحطة ويشتري المستهلك الكهرباء المتولدة.</p>
+</div>
+<div class="card bg-slate-50 border-slate-200">
+<div class="text-3xl mb-3">👥</div>
+<h3 class="font-bold text-base text-slate-900 mb-1">نماذج التمويل التعاوني</h3>
+<p class="text-xs text-slate-600 leading-relaxed">مبادرات لتجميل القوى الشرائية وتوزيع تكاليف البنية التحتية بين مجموعة أسر.</p>
+</div>
+</div>
+
+<div class="card max-w-4xl mx-auto">
+<h3 class="font-bold text-base text-slate-900 mb-2">معايير تقييم التمويل ومصادره:</h3>
+<p class="text-sm text-slate-700 leading-relaxed mb-4">تتطلب الجدوى الاستثمارية توفير آليات تمويل ميسرة وتقليل مخاطر الائتمان لتشجيع الاستثمار السكني والريفي في الطاقة المتجددة.</p>
+<div class="flex items-center gap-2 text-sm font-bold text-green-700 bg-green-50 p-3 rounded-xl border border-green-200">
+<span>🔗</span>
+<a href="https://egyptera.org" target="_blank" class="hover:underline">جهاز تنظيم مرفق الكهرباء وحماية المستهلك (EgyptERA)</a>
+</div>
+</div>
+</div>
+</section>
+
+<!-- References Section -->
+<section id="about" class="bg-white border-t border-slate-200">
+<div class="max-w-4xl mx-auto px-4">
+<h2 class="text-center">الأسس العلمية والمراجع (APA)</h2>
+<p class="text-slate-600 text-sm text-center mb-8">مبني على 10 أبحاث علمية محكمة تدعم الهدف 7 والهدف 13:</p>
+<ol id="refs" class="text-xs text-slate-700 space-y-3 list-decimal list-inside bg-slate-50 p-6 rounded-2xl border border-slate-200 shadow-inner"></ol>
+</div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-slate-900 text-slate-400 text-xs py-8 text-center border-t border-slate-800">
+<div class="max-w-7xl mx-auto px-4 space-y-2">
+<p class="font-bold text-slate-300">EcoSmart Egypt: مشروع مقرر الاستدامة (GEO217) - جامعة العلمين الدولية</p>
+<p>الهدف 7: طاقة نظيفة وبأسعار معقولة | الهدف 13: العمل المناخي</p>
+</div>
+</footer>
+
+<script>
+let T=[0.68,0.98,1.15,1.73,2.14,2.41,2.74];const B=[50,100,200,350,650,1000],FEE=[3,6,12,20,50,60,100];
+function energy(k){const p=T;if(k<=0)return 0;
+ if(k<=50)return k*p[0];if(k<=100)return 50*p[0]+(k-50)*p[1];if(k<=200)return k*p[2];
+ if(k<=350)return 200*p[2]+(k-200)*p[3];if(k<=650)return 200*p[2]+150*p[3]+(k-350)*p[4];
+ if(k<=1000)return k*p[5];return k*p[6];}
+function bill(k,f=1){if(k<=0)return 0;return f*(energy(k)+FEE[B.filter(x=>k>x).length]);}
+function kwhOf(b){let lo=0,hi=5000;for(let i=0;i<40;i++){const m=(lo+hi)/2;bill(m)<b?lo=m:hi=m;}return (lo+hi)/2;}
+function evalSys(C,sun,size,cap,disc,esc,exp){const y1=sun*365*0.8,c0=size*cap;
+ let cum=-c0,npv=-c0,pay=null,no=[0],wi=[c0];
+ for(let y=1;y<=25;y++){const f=Math.pow(1+esc,y-1),g=size*y1*Math.pow(0.995,y-1)/12,net=C-g;
+  const b0=bill(C,f),b1=net>=0?bill(net,f):net*exp,om=c0*0.01,c=(b0-b1)*12-om,prev=cum;
+  cum+=c;npv+=c/Math.pow(1+disc,y);if(pay===null&&cum>=0)pay=y-1+(-prev)/c;
+  no.push(no[y-1]+b0*12);wi.push(wi[y-1]+b1*12+om);}
+ return{size,pay,npv,no,wi,gen:size*y1};}
+const $=id=>document.getElementById(id);let chart;
+function fromKwh(){$('bill').value=Math.round(bill(+$('kwh').value));run();}
+function fromBill(){$('kwh').value=Math.round(kwhOf(+$('bill').value));run();}
+const fmt=x=>Math.round(x).toLocaleString('en');
+function card(r){return `<div class="p-3 rounded-xl border bg-white shadow-xs"><span>الحجم</span><b style="color:#0f172a; font-size:1.1rem;">${r.size.toFixed(1)} kW</b></div><div class="p-3 rounded-xl border bg-white shadow-xs"><span>الاسترداد</span><b style="color:#0f172a; font-size:1.1rem;">${r.pay===null?'+25 سنة':r.pay.toFixed(1)+' سنة'}</b></div><div class="p-3 rounded-xl border bg-white shadow-xs"><span>NPV (ج.م)</span><b class="${r.npv<0?'text-rose-600':'text-green-700'}" style="font-size:1.1rem;">${fmt(r.npv)}</b></div>`;}
+function run(){const C=+$('kwh').value||0,sun=+$('sun').value,n=+$('n').value,cap=+$('cap').value,d=$('disc').value/100,e=$('esc').value/100,x=+$('exp').value,gp=$('grp').value/100;
+ $('nT').innerText=n;if(C<=0){$('msg').innerText='أدخل استهلاكًا أكبر من صفر.';return;}const yld=sun*365*0.8,rec=C*12/yld;
+ const a=evalSys(C,sun,Math.max(5,rec),cap,d,e,x);
+ const b=evalSys(C,sun,Math.max(5,n*rec)/n,cap*(1-gp),d,e,x);
+ $('r1').innerHTML=card(a);$('r2').innerHTML=card(b);
+ $('msg').innerText=a.npv<0?(b.npv>a.npv?'بمعدل الخصم الحالي النظام الفردي غير مجدٍ ماليًا (NPV سالب)، والمشروع المشترك يحسّن النتيجة.':'بمعدل الخصم الحالي النظام الفردي غير مجدٍ ماليًا (NPV سالب).'):'بمعدل الخصم الحالي النظام الفردي مجدٍ ماليًا حسب هذه الافتراضات.';
+ $('co2').innerText=`إنتاج النظام الفردي ≈ ${fmt(a.gen)} ك.و.س/سنة. الوفر الكربوني التقريبي ≈ ${(Math.min(a.gen,C*12)*0.52/1000).toFixed(1)} طن CO₂/سنة (Abdelmeguid & Ibrahiem, 2025).`;
+ if(chart)chart.destroy();const L=a.no.map((_,i)=>i);
+ chart=new Chart($('ch'),{type:'line',data:{labels:L,datasets:[{label:'بدون شمس (تراكمي)',data:a.no,borderColor:'#e11d48',borderWidth:2},{label:'أسرة واحدة',data:a.wi,borderColor:'#0284c7',borderWidth:2},{label:'مشروع مشترك (للأسرة)',data:b.wi,borderColor:'#16a34a',borderWidth:3}]},options:{responsive:true,maintainAspectRatio:false,elements:{point:{radius:0}},plugins:{legend:{labels:{font:{family:'Cairo',weight:'bold'}}}},scales:{x:{title:{display:true,text:'السنة'}},y:{title:{display:true,text:'ج.م تراكمي'}}}}});}
+const apps=[['تكييف 1.5 حصان',1200,6],['سخان كهربائي',1500,2],['ثلاجة (24 ساعة)',180,24],['غسالة',500,1],['شاشات وإضاءة',250,7]];
+function shems(){let k=0;apps.forEach(a=>k+=a[1]*a[2]*30/1000);k=Math.round(k);$('sk').innerText=k+' ك.و.س';$('sk').dataset.v=k;
+ const names=['الأولى','الثانية','الثالثة','الرابعة','الخامسة','السادسة','السابعة'];const i=B.filter(x=>k>x).length;
+ $('sb').innerText=`الشريحة ${names[i]} ≈ ${fmt(bill(k))} ج.م/شهر`;let h='';const low=B.filter(x=>x<k).pop();
+ if(low){h+=`<li>اخفض ${k-low} ك.و.س شهريًا لتنزل شريحة وتوفر ≈ ${fmt(bill(k)-bill(low))} ج.م شهريًا.</li>`;}
+ const ac=apps[0];if(ac[2]>1)h+=`<li>ساعة تكييف أقل يوميًا تخفض ≈ ${Math.round(ac[1]*30/1000)} ك.و.س شهريًا (Saif et al., 2026).</li>`;
+ $('st').innerHTML=h||'<li>استهلاكك في أدنى شريحة.</li>';}
+function drawApps(){$('apps').innerHTML=apps.map((a,i)=>`<div class="card flex items-center justify-between !p-4 bg-slate-50 border-slate-200"><div><b class="text-sm font-bold text-slate-900">${a[0]}</b><span class="text-xs text-slate-500 block">${a[1]} واط</span></div><label class="text-xs font-bold text-slate-700">ساعات/يوم <input type="number" min="0" max="24" value="${a[2]}" class="w-16 border border-slate-300 rounded-lg p-1.5 text-center font-bold bg-white focus:border-green-600 outline-none" onchange="apps[${i}][2]=+this.value||0;shems()"></label></div>`).join('');}
+function drawTar(){$('tar').innerHTML=T.map((v,i)=>`<div><label class="text-xs font-bold text-slate-600">ش${i+1}</label><input type="number" step="0.01" value="${v}" class="inp !p-1 text-center text-xs" onchange="T[${i}]=+this.value;fromKwh();shems()"></div>`).join('');}
+
+const R=[
+['Abdelaty, H., Weiss, D., & Mangelkramer, D. (2023). Climate policy in developing countries: Analysis of climate mitigation and adaptation measures in Egypt. Sustainability, 15(11), Article 9121.','10.3390/su15119121'],
+['Abdelmeguid, N., & Ibrahiem, D. M. (2025). Decarbonizing Egypt’s energy sector: Pathways for an accelerated energy transition. Review of Economics and Political Science, 10(4), 303–322.','10.1108/REPS-03-2024-0001'],
+['Abouaiana, A., & Battisti, A. (2025). Towards clean energy transition: An exploratory case study from rural Egypt. Sustainability, 17(4), Article 1597.','10.3390/su17041597'],
+['Abubakr, H., Vasquez, J. C., Mahmoud, K., Darwish, M. M. F., & Guerrero, J. M. (2022). Comprehensive review on renewable energy sources in Egypt—Current status, grid codes and future vision. IEEE Access, 10, 4081–4101.','10.1109/ACCESS.2022.3140385'],
+['Breisinger, C., Mukashov, A., Raouf, M., & Wiebelt, M. (2019). Energy subsidy reform for growth and equity in Egypt: The approach matters. Energy Policy, 129, 661–671.','10.1016/j.enpol.2019.02.059'],
+['ElSayed, M., Aghahosseini, A., & Breyer, C. (2023). High cost of slow energy transitions for emerging countries: On the case of Egypt’s pathway options. Renewable Energy, 210, 107–126.','10.1016/j.renene.2023.04.036'],
+['Gibson, A., Makuch, Z., Yeganyan, R., Tan, N., Cannone, C., & Howells, M. (2024). Long-term energy system modelling for a clean energy transition in Egypt’s energy sector. Energies, 17(10), Article 2397.','10.3390/en17102397'],
+['Mondal, M. A. H., Ringler, C., Al-Riffai, P., Eldidi, H., Breisinger, C., & Wiebelt, M. (2019). Long-term optimization of Egypt’s power sector: Policy implications. Energy, 166, 1063–1073.','10.1016/j.energy.2018.10.158'],
+['Saif, O., Elazab, R., & Daowd, M. (2026). Smart home energy management for sustainable socioeconomic development in Egyptian households. Scientific Reports, 16, Article 5654.','10.1038/s41598-026-35705-0'],
+['Salah, S. I., Eltaweel, M., & Abeykoon, C. (2022). Towards a sustainable energy future for Egypt: A systematic review of renewable energy sources, technologies, challenges, and recommendations. Cleaner Engineering and Technology, 8, Article 100497.','10.1016/j.clet.2022.100497']
+];
+
+$('refs').innerHTML=R.map(r=>`<li dir="ltr" class="text-left">${r[0]} <a class="text-sky-700 underline font-bold" href="https://doi.org/${r[1]}" target="_blank">doi.org/${r[1]}</a></li>`).join('');
+drawTar();drawApps();shems();fromKwh();
+</script>
+</body>
+</html>
